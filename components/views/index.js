@@ -1,9 +1,6 @@
-export { default as Tutorials } from "./Tutorials";
 export { default as Home } from "./Home";
-export { default as Controls } from "./Controls";
-export { default as History } from "./History";
-export { default as About } from "./About";
-export { default as Leaderboard } from "./Leaderboard";
-export { default as Credits } from "./Credits";
-export { default as Scoring } from "./Scoring";
-export { default as Bugs } from "./Bugs";
+export { default as Photos } from "./Photos";
+export { default as WeddingParty } from "./WeddingParty";
+export { default as Travel } from "./Travel";
+export { default as Registry } from "./Registry";
+export { default as RSVP } from "./RSVP";
