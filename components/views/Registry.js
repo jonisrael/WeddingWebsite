@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default st => html`
+export default (st) => html`
   <section id="leaderboard-page">
     <h2 id="leaderboard-header">Score Leaderboard</h2>
     <p style="font-size:small">
