@@ -130,7 +130,7 @@ router
   .on({
     "/": () => render(state.Home),
     ":page": (params) => {
-      render(state[capitalize(params.page)]);
+      render(state[params.page]);
     },
   })
   .resolve();
