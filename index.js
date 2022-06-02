@@ -129,6 +129,8 @@ router.hooks({
 router
   .on({
     "/": () => render(state.Home),
-    ":page": (params) => render(state[capitalize(params.page)]),
+    ":page": (params) => {
+      render(state[capitalize(params.page)]);
+    },
   })
   .resolve();
