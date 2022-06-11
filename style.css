@@ -22,8 +22,9 @@ section {
 }
 
 p {
-  /* text-indent: 3rem; */
-  font-size: 2vh;
+  text-indent: 2rem;
+  color: #867267;
+  font-size: 1.5vw;
   line-height: 1.5;
   padding: 0 2vw;
 }
@@ -66,7 +67,7 @@ tr:nth-child(even) {
 
 #root {
   margin: 2.5vh auto;
-  max-width: 60vw;
+  max-width: 80vw;
   padding-top: 1vh;
 }
 
@@ -83,9 +84,21 @@ tr:nth-child(even) {
   background-color: turquoise;
 }
 
-#player-name {
-  font-size: large;
-  border-radius: 3px;
+#story-columns,
+#more-home-columns {
+  display: flex;
+  padding: 1rem;
+}
+
+#story-paragraph {
+  /* margin-top: 1rem; */
+  font-size: medium;
+}
+
+.columns {
+  flex: 50%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #title {
@@ -99,7 +112,7 @@ tr:nth-child(even) {
   /* height: 90%; */
   padding: 0;
   padding-bottom: 1px;
-  margin: 1vh 20vw;
+  margin: 1vh 10vw;
   /* max-width: 95vw; */
   /* top: 5%; */
   /* max-height: 95vh; */
@@ -109,14 +122,6 @@ tr:nth-child(even) {
   /* transform: translate(0%, 25%); */
   /* padding-right: 30px;
     padding-left: 30px; */
-}
-
-#start-options {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 0;
-  /* max-width: 60vw; */
 }
 
 .default-button {
@@ -140,11 +145,20 @@ tr:nth-child(even) {
   background-image: linear-gradient(to bottom right, darkgrey, slategrey);
 }
 
-.start-buttons {
-  min-width: 50vw;
-  padding: 0.5rem;
-  margin: 1rem auto;
-  /* max-width: 40rem; */
+#home-photo-1 {
+  display: block;
+  margin: 0 auto;
+  content: url(assets/Images/main.jpg);
+  width: 90%;
+}
+
+#home-photo-2 {
+  content: url("./assets/Images/DSC_4256.jpg");
+  width: 95%;
+}
+#home-photo-3 {
+  content: url("./assets/Images/DSC_4304.jpg");
+  width: 95%;
 }
 
 #header #home-page {
@@ -195,9 +209,50 @@ tr:nth-child(even) {
 .training-hrs:nth-of-type(4) {
   display: none;
 }
+
+#desktop-div {
+  display: block;
+}
+#mobile-div {
+  display: none;
+}
 /* Now define features of mobile screen. Should be 768px */
 @media only screen and (max-width: 768px) {
+  #desktop-div {
+    display: none;
+  }
+  #mobile-div {
+    display: block;
+  }
   hr {
     margin: 0.5rem;
+  }
+
+  .rows {
+    padding: 0.5rem;
+  }
+
+  #root {
+    max-width: 90vw;
+  }
+
+  p {
+    font-size: medium;
+    /* text-indent: 1rem; */
+  }
+
+  .fa,
+  .fa-bars {
+    display: inline;
+    /* content: url("assets/images/navbar.png"); */
+  }
+
+  .nav-links li:not(:first-child) {
+    display: none !important;
+  }
+
+  .nav-links .icon {
+    float: right;
+    display: block;
   }
 }

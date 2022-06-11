@@ -37,12 +37,10 @@ export function render(st) {
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
   document
-    .querySelector(".fa-bars")
+    .querySelector("#nav-bar")
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
-
-  // add event listener for the the home/game page
 }
 
 export function deleteEntry(_id) {
