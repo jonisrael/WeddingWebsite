@@ -8,7 +8,7 @@ export default (st) => html`
       <div id="story-columns">
         <div class="columns"><img id="home-photo-1" /></div>
         <div class="columns">
-          <p id="story-paragraph">
+          <p>
             Our story begins in the Spring of 2019. Susanna was teaching second
             grade at an elementary school in Saint Louis and Jon was traveling
             around to different schools teaching chess. He was assigned to
@@ -50,7 +50,7 @@ export default (st) => html`
       <div id="story-rows">
         <div class="rows"><img id="home-photo-1" /></div>
         <div class="rows">
-          <p id="story-paragraph">
+          <p>
             Our story begins in the Spring of 2019. Susanna was teaching second
             grade at an elementary school in Saint Louis and Jon was traveling
             around to different schools teaching chess. He was assigned to
