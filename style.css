@@ -216,8 +216,16 @@ tr:nth-child(even) {
 #mobile-div {
   display: none;
 }
+
+.nav-links li:not(:first-child) {
+  display: none !important;
+}
+
 /* Now define features of mobile screen. Should be 768px */
 @media only screen and (max-width: 768px) {
+  #page-body {
+    margin: 1vh 5vw;
+  }
   #desktop-div {
     display: none;
   }
@@ -247,12 +255,13 @@ tr:nth-child(even) {
     /* content: url("assets/images/navbar.png"); */
   }
 
-  .nav-links li:not(:first-child) {
-    display: none !important;
-  }
-
-  .nav-links .icon {
+  /* .nav-links .icon {
     float: right;
     display: block;
+  } */
+}
+@media only screen and (max-width: 475px) {
+  #nav-bar li a {
+    margin: 0 0.5rem;
   }
 }

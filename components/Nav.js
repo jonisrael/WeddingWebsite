@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default (links) => html`
   <nav id="nav-bar">
-    <i class="fa fa-bars" src="assets/images/navbar.png"></i>
+    <!-- <i class="fa fa-bars" src="assets/images/navbar.png"></i> -->
     <ul class="nav-links">
       ${links.map(
         (link) =>
