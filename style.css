@@ -145,6 +145,20 @@ tr:nth-child(even) {
   background-image: linear-gradient(to bottom right, darkgrey, slategrey);
 }
 
+#travel-tabs {
+  padding-inline-start: 0;
+  cursor: pointer;
+}
+
+#travel-tabs li {
+  list-style-type: none;
+  background-color: navy;
+  color: white;
+  font-size: large;
+  padding: 1em;
+  margin: 0.5em;
+}
+
 #home-photo-1 {
   display: block;
   margin: 0 auto;
@@ -215,6 +229,17 @@ tr:nth-child(even) {
 }
 #mobile-div {
   display: none;
+}
+.tab-content {
+  display: none;
+}
+
+.active {
+  display: block !important;
+}
+
+.dev-enabled {
+  display: inline !important;
 }
 
 .nav-links li:not(:first-child) {

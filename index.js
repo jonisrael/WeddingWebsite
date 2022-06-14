@@ -36,11 +36,33 @@ export function render(st) {
 
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
+  document.querySelector("footer > strong").addEventListener("click", () => {
+    document.querySelectorAll(".nav-links > li").forEach((link) => {
+      link.className = "dev-enabled nav-links";
+      link.style.cssText = "display: inline !important;";
+      console.log("done");
+    });
+  });
   document
     .querySelector("#nav-bar")
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
+  if (st.view === "Travel") {
+    let travelTabList = document.querySelectorAll("#travel-tabs > li");
+    for (let i = 0; i < travelTabList.length; i++) {
+      let element = travelTabList[i];
+      console.log(element);
+      element.addEventListener("click", () => {
+        let content = document.querySelector(
+          `#travel-tabs > li:nth-child(${i + 1}) > div`
+        );
+        if (content.className.includes("active"))
+          content.className = "tab-content";
+        else content.className += " active";
+      });
+    }
+  }
 }
 
 export function deleteEntry(_id) {

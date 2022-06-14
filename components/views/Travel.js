@@ -4,7 +4,24 @@ export default (st) => html`
   <section id="travel">
     <body>
       <div>
-        <p>
+        <ul id="travel-tabs">
+          <li>
+            <span>Lodging</span>
+            <div class="tab-content">
+            </div>
+          </li>
+          <li>
+            <span>Ceremony</span>
+            <div class="tab-content">
+              The ceremony will be at the Piper Palm House in Tower Grove Park.
+              4271 Northeast Dr, St. Louis, MO 63110
+            </div>
+          </li>
+          <li>
+            <span>Reception</span>
+            <div class="tab-content"></div>
+          </li>
+        </ul>
           Lodging Ceremony The ceremony will be at the Piper Palm House in Tower
           Grove Park. 4271 Northeast Dr, St. Louis, MO 63110 Directions from the
           hotels to the Piper Palm House: Parking: There is no specific parking
