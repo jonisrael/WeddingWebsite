@@ -52,14 +52,24 @@ function addEventListeners(st) {
     let travelTabList = document.querySelectorAll("#travel-tabs > li");
     for (let i = 0; i < travelTabList.length; i++) {
       let element = travelTabList[i];
+      let title = document.querySelector(
+        `#travel-tabs > li:nth-child(${i + 1}) > .tab-title`
+      );
+      let content = document.querySelector(
+        `#travel-tabs > li:nth-child(${i + 1}) > .tab-content`
+      );
+      let icon = document.querySelector(
+        `#travel-tabs > li:nth-child(${i + 1}) > .toggle-tab-icon`
+      );
       console.log(element);
-      element.addEventListener("click", () => {
-        let content = document.querySelector(
-          `#travel-tabs > li:nth-child(${i + 1}) > div`
-        );
-        if (content.className.includes("active"))
+      title.addEventListener("click", () => {
+        if (content.className.includes("active")) {
           content.className = "tab-content";
-        else content.className += " active";
+          icon.className = "toggle-tab-icon";
+        } else {
+          content.className += " active";
+          icon.className += " open";
+        }
       });
     }
   }

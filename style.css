@@ -147,18 +147,22 @@ tr:nth-child(even) {
 
 #travel-tabs {
   padding-inline-start: 0;
-  cursor: pointer;
 }
 
 #travel-tabs li {
   list-style-type: none;
   background-color: navy;
   color: white;
+  text-align: center;
+  border-radius: 20px;
   font-size: large;
   padding: 1em;
   margin: 0.5em;
 }
 
+.tab-title {
+  cursor: pointer;
+}
 #home-photo-1 {
   display: block;
   margin: 0 auto;
@@ -232,6 +236,23 @@ tr:nth-child(even) {
 }
 .tab-content {
   display: none;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.tab-content p {
+  color: white;
+}
+
+.toggle-tab-icon {
+  float: right;
+  font-size: x-large;
+  font-weight: bold;
+  color: orange;
+}
+
+.open {
+  transform: scale(1, -1);
 }
 
 .active {
@@ -242,6 +263,7 @@ tr:nth-child(even) {
   display: inline !important;
 }
 
+/* Add and remove when doing dev work */
 .nav-links li:not(:first-child) {
   display: none !important;
 }
