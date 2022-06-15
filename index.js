@@ -59,7 +59,7 @@ function addEventListeners(st) {
         `#travel-tabs > li:nth-child(${i + 1}) > .tab-content`
       );
       let icon = document.querySelector(
-        `#travel-tabs > li:nth-child(${i + 1}) > .toggle-tab-icon`
+        `#travel-tabs > li:nth-child(${i + 1}) > .tab-title > .toggle-tab-icon`
       );
       console.log(element);
       title.addEventListener("click", () => {

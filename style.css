@@ -238,21 +238,21 @@ tr:nth-child(even) {
   display: none;
   text-align: left;
   padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .tab-content p {
   color: white;
+  text-indent: 0;
 }
 
 .toggle-tab-icon {
+  content: url("./assets/Images/arrowOrange.png");
   float: right;
-  font-size: x-large;
-  font-weight: bold;
-  color: orange;
 }
 
 .open {
-  transform: scale(1, -1);
+  transform: scale(1, -1) translateY(20px);
 }
 
 .active {
@@ -264,7 +264,8 @@ tr:nth-child(even) {
 }
 
 /* Add and remove when doing dev work */
-.nav-links li:not(:first-child) {
+.nav-links li:nth-child(3),
+.nav-links li:nth-child(4) {
   display: none !important;
 }
 
