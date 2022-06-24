@@ -3,10 +3,22 @@ import html from "html-literal";
 export default (st) => html`
   <section id="rsvp">
     <p>
-      We have two ways to RSVP: Mail back the included RSVP card in your
-      invitation Fill out the RSVP form here on the website.
+      We have two ways to RSVP. You can either mail back the included RSVP card
+      in your invitation, or fill out the RSVP form here on the website.
     </p>
-    <form></form>
+    <form>
+      <label for="guest-name" id="guest-label"> Look up your name here: </label>
+      <br />
+      <input
+        type="text"
+        name="guest-name"
+        id="guest-name"
+        minlength="3"
+        maxlength="20"
+        autofocus
+      />
+      <input type="submit" id="submit" name="submit" value="Look Up Name" />
+    </form>
   </section>
 `;
 

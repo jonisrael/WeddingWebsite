@@ -167,7 +167,7 @@ tr:nth-child(even) {
   display: block;
   margin: 0 auto;
   content: url(assets/Images/main.jpg);
-  width: 90%;
+  width: 95%;
 }
 
 #home-photo-2 {
@@ -175,7 +175,7 @@ tr:nth-child(even) {
   width: 95%;
 }
 #home-photo-3 {
-  content: url("./assets/Images/DSC_4304.jpg");
+  content: url("./assets/Images/DSC_4545.jpg");
   width: 95%;
 }
 
@@ -269,6 +269,12 @@ tr:nth-child(even) {
   display: none !important;
 }
 
+/* @media only screen and (min-width: 768px) {
+  .columns p {
+    font-size: 2.5vh;
+  }
+} */
+
 /* Now define features of mobile screen. Should be 768px */
 @media only screen and (max-width: 768px) {
   #page-body {
@@ -308,6 +314,7 @@ tr:nth-child(even) {
     display: block;
   } */
 }
+
 @media only screen and (max-width: 475px) {
   #nav-bar li a {
     margin: 0 0.5rem;

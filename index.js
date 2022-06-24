@@ -67,6 +67,9 @@ function addEventListeners(st) {
           content.className = "tab-content";
           icon.className = "toggle-tab-icon";
         } else {
+          if (document.querySelector(".tab-content.active")) {
+            document.querySelector(".toggle-tab-icon.open").click();
+          }
           content.className += " active";
           icon.className += " open";
         }
@@ -82,19 +85,15 @@ export function deleteEntry(_id) {
       console.log(`Deletion Successful.`);
     })
     .catch((error) => {
-      leaderboard.reason = "no-leaderboard";
       console.log("Deletion Failed.", error);
     });
 }
 
-export function updateEntry(newData, indexToReplace) {
-  console.log("entry:", leaderboard.data[indexToReplace]);
+export function updateRSVP(arrOfNames, name) {
+  console.log("entry:", state.RSVP.data[indexToReplace]);
   console.log("index:", indexToReplace);
   axios
-    .put(
-      `${process.env.API}/games/${leaderboard.data[indexToReplace]._id}`,
-      newData
-    ) // process.env.API accesses API
+    .put(`${process.env.API}/entries/${state.RSVP.data._id}`, newData) // process.env.API accesses API
     .then((response) => {
       console.log(`Update Successful. Setting username to ${newData.name}`);
       localStorage.setItem("username", newData.name);
@@ -108,6 +107,20 @@ export function updateEntry(newData, indexToReplace) {
     });
 }
 
+export function getData() {
+  axios
+    .get("https://jon-and-susanna-wedding.herokuapp.com/entries")
+    .then((response) => {
+      console.log("Got Data!", response);
+    })
+    .catch((error) => {
+      console.log("Failed to", error);
+      displayMessage(
+        `Failed to get names. Try reloading the page. If this continues, please contact Jonathan! ${error}`
+      );
+    });
+}
+
 export function sendData(requestData) {
   console.log("Posting data...");
   axios
@@ -116,7 +129,6 @@ export function sendData(requestData) {
       console.log("Posted!");
     })
     .catch((error) => {
-      leaderboard.reason = "no-leaderboard";
       displayMessage(`Failed to Post Data. ${error}`);
       console.log("Failed to Post", error);
     });
