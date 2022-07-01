@@ -15,8 +15,7 @@ export default (st) => html`
             Susanna's school on Friday afternoons and Susanna was in charge of
             monitoring the group he was teaching. Humor is one of the first
             things Susanna noticed with Jon, and he had many dumb jokes and
-            funny phrases to keep both himself and the kids entertained. He was
-            cute and hilarious!
+            funny phrases to entertain the kids. He was also cute!
           </p>
           <p>
             Over time, Susanna realized she had a crush on Jon and, when his
@@ -27,16 +26,12 @@ export default (st) => html`
             needing volunteers, Jon skipped class to meet up at the baseball
             game.
           </p>
-
           <p>
             Initially he asked her to paintball, which was a terrible idea, but
-            luckily the weather prevented a disasterous date from occuring, and
+            luckily the weather prevented a disastrous date from occurring, and
             we instead made plans to go out to eat that weekend. We have been
-            together since.
-          </p>
-          <p>
-            Susanna has only asked one guy out in her lifetime, and it worked!
-            We've been together ever since!
+            together since. Susanna has only asked one guy out in her
+            lifetime,and it worked!
           </p>
         </div>
       </div>

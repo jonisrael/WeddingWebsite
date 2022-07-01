@@ -65,6 +65,10 @@ tr:nth-child(even) {
   background-color: whitesmoke;
 }
 
+iframe {
+  /* margin: 0 auto; */
+}
+
 #root {
   margin: 2.5vh auto;
   max-width: 80vw;
@@ -75,13 +79,6 @@ tr:nth-child(even) {
   background-color: rgb(255, 240, 240);
   padding: 1px;
   border-radius: 3px;
-}
-
-.refresh {
-  margin-left: 75%;
-  padding: 0.5rem;
-  justify-content: flex-end;
-  background-color: turquoise;
 }
 
 #story-columns,
@@ -112,7 +109,7 @@ tr:nth-child(even) {
   /* height: 90%; */
   padding: 0;
   padding-bottom: 1px;
-  margin: 1vh 10vw;
+  margin: 1vh 5vw;
   /* max-width: 95vw; */
   /* top: 5%; */
   /* max-height: 95vh; */
@@ -249,10 +246,11 @@ tr:nth-child(even) {
 .toggle-tab-icon {
   content: url("./assets/Images/arrowOrange.png");
   float: right;
+  transform: scale(0.75);
 }
 
 .open {
-  transform: scale(1, -1) translateY(20px);
+  transform: scale(0.75, -0.75) translateY(20px);
 }
 
 .active {

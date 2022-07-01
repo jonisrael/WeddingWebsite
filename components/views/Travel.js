@@ -12,7 +12,18 @@ export default (st) => html`
             </div>
             <div class="tab-content">
               <p>
-                Check back later!
+                We have three locations in which we have booked rooms.
+                <br /><br />
+                Location 1, located in the BLANK area. About BLANK minute drive
+                to the ceremony and BLANK minute drive to the reception. Embed
+                Maps here:
+                <br /><br />
+                Location 2, located in the BLANK area. About BLANK minute drive
+                to the ceremony and BLANK minute drive to the reception.
+                <br /><br />
+                Location 3, located in the BLANK area. About BLANK minute drive
+                to the ceremony and BLANK minute drive to the reception.
+                <br /><br />
               </p>
             </div>
           </li>
@@ -23,13 +34,26 @@ export default (st) => html`
             </div>
             <div class="tab-content">
               <p>
+                The ceremony will be at the Piper Palm House in Tower Grove
+                Park. <br />
                 The address is:
                 <a href="https://goo.gl/maps/s2VerwemNhJEV9hC8" target="_blank"
                   ><strong>4271 Northeast Dr, St. Louis, MO 63110</strong></a
-                >. <br /><br />
-                The ceremony will be at the Piper Palm House in Tower Grove
-                Park. <br /><br />
+                >.
+              </p>
+              <div id="ceremony-map-section" class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.7860973545285!2d-90.25934368465815!3d38.60779327961635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b45683d57e5d%3A0x748efe9a2237e0f5!2s4271%20Northeast%20Dr%2C%20St.%20Louis%2C%20MO%2063110!5e0!3m2!1sen!2sus!4v1656697016039!5m2!1sen!2sus"
+                  width="100%"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
 
+              <p>
                 <strong>Parking:</strong><br />There is no specific parking lot
                 for the Piper Palm House, but all parking within the park is
                 free. <br /><br />
