@@ -66,12 +66,14 @@ function addEventListeners(st) {
         if (content.className.includes("active")) {
           content.className = "tab-content";
           icon.className = "toggle-tab-icon";
+          title.className = "tab-title";
         } else {
           if (document.querySelector(".tab-content.active")) {
             document.querySelector(".toggle-tab-icon.open").click();
           }
           content.className += " active";
           icon.className += " open";
+          title.className += " active";
         }
       });
     }

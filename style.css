@@ -37,6 +37,7 @@ h1 {
 h2 {
   text-align: center;
   padding: 1rem;
+  font-size: x-large;
 }
 
 h3 {
@@ -66,7 +67,8 @@ tr:nth-child(even) {
 }
 
 iframe {
-  /* margin: 0 auto; */
+  display: block;
+  margin: 0 auto;
 }
 
 #root {
@@ -98,9 +100,23 @@ iframe {
   justify-content: center;
 }
 
-#title {
+.hotel-names {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #007bff !important;
+}
+
+.lodging-locations a {
+  color: white;
+}
+
+.lodging-locations a:hover {
+  font-weight: bold;
+}
+
+h1#title {
   /* padding-bottom: 0; */
-  font-size: 3vh;
+  font-size: xx-large;
 }
 
 #page-body {
@@ -160,6 +176,7 @@ iframe {
 .tab-title {
   cursor: pointer;
 }
+
 #home-photo-1 {
   display: block;
   margin: 0 auto;
@@ -215,6 +232,26 @@ iframe {
   text-decoration: none;
 }
 
+#ceremony-directions {
+  padding-left: 1rem;
+}
+
+#ceremony-directions li {
+  list-style-type: revert;
+  text-align: left;
+  padding: 0 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.lodging-locations {
+  display: block;
+  text-align: center;
+}
+
+/* #final-paragraph {
+  padding-bottom: 0;
+} */
+
 /* Change the link color to #111 (red) on hover */
 #nav-bar li a:hover {
   /* background-color: #111; */
@@ -243,7 +280,7 @@ iframe {
   text-indent: 0;
 }
 
-.toggle-tab-icon {
+i.toggle-tab-icon {
   content: url("./assets/Images/arrowOrange.png");
   float: right;
   transform: scale(0.75);
@@ -253,8 +290,13 @@ iframe {
   transform: scale(0.75, -0.75) translateY(20px);
 }
 
-.active {
+.tab-content.active {
   display: block !important;
+}
+
+.tab-title.active span {
+  font-weight: bold;
+  font-size: x-large;
 }
 
 .dev-enabled {
@@ -284,6 +326,17 @@ iframe {
   #mobile-div {
     display: block;
   }
+
+  div#lodging-content {
+    padding: 0;
+  }
+
+  i.toggle-tab-icon {
+    content: url("./assets/Images/arrowOrange.png");
+    float: right;
+    transform: scale(0.5) translateY(-0.4rem);
+  }
+
   hr {
     margin: 0.5rem;
   }
@@ -314,6 +367,14 @@ iframe {
 }
 
 @media only screen and (max-width: 475px) {
+  label {
+    font-size: medium;
+  }
+
+  div#page-body {
+    margin: 1vh 1vw;
+  }
+
   #nav-bar li a {
     margin: 0 0.5rem;
   }

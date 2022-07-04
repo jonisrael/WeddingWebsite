@@ -10,20 +10,47 @@ export default (st) => html`
               <span>Lodging</span>
               <i class="toggle-tab-icon"></i>
             </div>
-            <div class="tab-content">
+            <div id="lodging-content" class="tab-content">
+              <h2 class="first-text">
+                We have three locations in which we booked rooms:
+              </h2>
               <p>
-                We have three locations in which we have booked rooms.
-                <br /><br />
-                Location 1, located in the BLANK area. About BLANK minute drive
-                to the ceremony and BLANK minute drive to the reception. Embed
-                Maps here:
-                <br /><br />
-                Location 2, located in the BLANK area. About BLANK minute drive
-                to the ceremony and BLANK minute drive to the reception.
-                <br /><br />
-                Location 3, located in the BLANK area. About BLANK minute drive
-                to the ceremony and BLANK minute drive to the reception.
-                <br /><br />
+                <span class="lodging-locations"
+                  ><a
+                    href="https://www.hilton.com/en/hotels/stlhlhx-hampton-suites-st-louis-at-forest-park/"
+                    class="hotel-names"
+                    >Hampton Inn and Suites at Forest Park</a
+                  ><br />
+                  <a href="https://goo.gl/maps/pPmGNT86d8CkdsrNA"
+                    >5650 Oakland Avenue</a
+                  ><br />
+                  314-655-3993 <br />15% discount if you call to book for our
+                  wedding <br /><br
+                /></span>
+              </p>
+              <p>
+                <span class="lodging-locations"
+                  ><a
+                    href="https://www.druryhotels.com/locations/st-louis-mo/drury-inn-and-suites-st-louis-forest-park/"
+                    class="hotel-names"
+                    >NOT CONFIRMED YET: Drury Inn and Suites Forest Park</a
+                  ><br />
+                  <a href="https://goo.gl/maps/djQoqPf8J8BfQB1c6"
+                    >2111 Sulphur Avenue</a
+                  ><br />
+                  314-646-0770 <br />Please book before October 12th<br /><br
+                /></span>
+              </p>
+              <p>
+                <span class="lodging-locations"
+                  ><a href="https://www.cheshirestl.com/" class="hotel-names"
+                    >NOT CONFIRMED YET: The Cheshire</a
+                  ><br />
+                  <a href="https://goo.gl/maps/zTtZELppj2y4Ab76A"
+                    >6300 Clayton Road</a
+                  ><br />
+                  314-647-7300 <br />Please book before October 29th<br /><br
+                /></span>
               </p>
             </div>
           </li>
@@ -32,19 +59,19 @@ export default (st) => html`
               <span>Ceremony</span>
               <i class="toggle-tab-icon"></i>
             </div>
-            <div class="tab-content">
+            <div id="ceremony-content" class="tab-content">
               <p>
                 The ceremony will be at the Piper Palm House in Tower Grove
                 Park. <br />
                 The address is:
-                <a href="https://goo.gl/maps/s2VerwemNhJEV9hC8" target="_blank"
+                <a href="https://goo.gl/maps/s2VerwemNhJEV9hC8"
                   ><strong>4271 Northeast Dr, St. Louis, MO 63110</strong></a
                 >.
               </p>
               <div id="ceremony-map-section" class="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.7860973545285!2d-90.25934368465815!3d38.60779327961635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b45683d57e5d%3A0x748efe9a2237e0f5!2s4271%20Northeast%20Dr%2C%20St.%20Louis%2C%20MO%2063110!5e0!3m2!1sen!2sus!4v1656697016039!5m2!1sen!2sus"
-                  width="100%"
+                  width="95%"
                   height="450"
                   style="border:0;"
                   allowfullscreen=""
@@ -52,25 +79,38 @@ export default (st) => html`
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-
-              <p>
+              <p class="final-paragraph">
+                <br />
                 <strong>Parking:</strong><br />There is no specific parking lot
                 for the Piper Palm House, but all parking within the park is
-                free. <br /><br />
-
-                <strong>If you enter the park from Magnolia Ave</strong>: Go
-                around the roundabout to the second exit, turn left at either
-                the first or second turnoffs and find parking near the Piper
-                Palm House. Turn right before the roundabout and park along the
-                road through the park.
-                <br />
-                <br />
-                <strong>If you enter the park from Arsenal St</strong>: Take the
-                first exit on the roundabout, turn left at either the first or
-                second turnoffs and find parking near the Piper Palm House. -
-                You can take the second exit on the roundabout, turn left at the
-                first turnoff and park along the road.
+                free. There are two areas to park in.<br />
               </p>
+              <ul id="ceremony-directions">
+                <label>
+                  <strong>If you enter the park from Magnolia Ave</strong>:
+                </label>
+                <li>
+                  Go around the roundabout to the second exit, turn left at
+                  either the first or second turnoffs and find parking near the
+                  Piper Palm House.
+                </li>
+                <li>
+                  Turn right before the roundabout and park along the road
+                  through the park.
+                </li>
+                <label>
+                  <strong>If you enter the park from Arsenal St</strong>:
+                </label>
+                <li>
+                  Take the first exit on the roundabout, then turn left at
+                  either the first or second turnoffs and park near the Piper
+                  Palm House.
+                </li>
+                <li>
+                  You can take the second exit on the roundabout, turn left at
+                  the first turnoff and park along the road.
+                </li>
+              </ul>
             </div>
           </li>
           <li>
@@ -78,14 +118,10 @@ export default (st) => html`
               <span>Reception</span>
               <i class="toggle-tab-icon"></i>
             </div>
-            <div class="tab-content">
+            <div id="reception-content" class="tab-content">
               <p>
                 The address is:
-                <a
-                  href="https://goo.gl/maps/NTmjZWagaJ65y5hE8"
-                  target="_blank"
-                  color="white"
-                >
+                <a href="https://goo.gl/maps/NTmjZWagaJ65y5hE8" color="white">
                   <strong>5856 Christy Blvd, St. Louis, MO 63116</strong>
                 </a>
                 <br />
