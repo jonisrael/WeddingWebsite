@@ -24,32 +24,25 @@ export default (st) => html`
                   <a href="https://goo.gl/maps/pPmGNT86d8CkdsrNA"
                     >5650 Oakland Avenue</a
                   ><br />
-                  314-655-3993 <br />15% discount if you call to book for our
-                  wedding <br /><br
-                /></span>
-              </p>
-              <p>
-                <span class="lodging-locations"
-                  ><a
-                    href="https://www.druryhotels.com/locations/st-louis-mo/drury-inn-and-suites-st-louis-forest-park/"
-                    class="hotel-names"
-                    >NOT CONFIRMED YET: Drury Inn and Suites Forest Park</a
-                  ><br />
-                  <a href="https://goo.gl/maps/djQoqPf8J8BfQB1c6"
-                    >2111 Sulphur Avenue</a
-                  ><br />
-                  314-646-0770 <br />Please book before October 12th<br /><br
+                  314-655-3993 <br />15% discount if you call and mention
+                  Israel/Bower's wedding group rate!<br /><br
                 /></span>
               </p>
               <p>
                 <span class="lodging-locations"
                   ><a href="https://www.cheshirestl.com/" class="hotel-names"
-                    >NOT CONFIRMED YET: The Cheshire</a
+                    >The Cheshire</a
                   ><br />
                   <a href="https://goo.gl/maps/zTtZELppj2y4Ab76A"
                     >6300 Clayton Road</a
                   ><br />
-                  314-647-7300 <br />Please book before October 29th<br /><br
+                  314-647-7300 <br />Click this
+                  <a
+                    class="reservation-link"
+                    href="https://reservations.travelclick.com/98391?groupID=3576612/"
+                    >link</a
+                  >
+                  to book with Cheshire! Please book before October 28th<br /><br
                 /></span>
               </p>
             </div>
