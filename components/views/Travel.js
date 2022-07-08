@@ -25,7 +25,7 @@ export default (st) => html`
                     >5650 Oakland Avenue</a
                   ><br />
                   314-655-3993 <br />15% discount if you call and mention
-                  Israel/Bower's wedding group rate!<br /><br
+                  Israel/Bowers' wedding group rate!<br /><br
                 /></span>
               </p>
               <p>
