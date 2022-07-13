@@ -12,7 +12,7 @@ export default (st) => html`
             </div>
             <div id="lodging-content" class="tab-content">
               <h2 class="first-text">
-                We have three locations in which we booked rooms:
+                We have two locations of booked rooms:
               </h2>
               <p>
                 <span class="lodging-locations"
@@ -24,10 +24,14 @@ export default (st) => html`
                   <a href="https://goo.gl/maps/pPmGNT86d8CkdsrNA"
                     >5650 Oakland Avenue</a
                   ><br />
-                  314-655-3993 <br />15% discount if you call and mention
-                  Israel/Bowers' wedding group rate!<br /><br
+                  314-655-3993 <br />15% discount if you
+                  <strong>call</strong> and mention the
+                  <span style="border-bottom: 1px solid white;"
+                    >Israel/Bowers' wedding group rate</span
+                  >.<br />Please book before October 18th.<br
                 /></span>
               </p>
+              <br />
               <p>
                 <span class="lodging-locations"
                   ><a href="https://www.cheshirestl.com/" class="hotel-names"
@@ -36,13 +40,13 @@ export default (st) => html`
                   <a href="https://goo.gl/maps/zTtZELppj2y4Ab76A"
                     >6300 Clayton Road</a
                   ><br />
-                  314-647-7300 <br />Click this
+                  314-647-7300 <br />
                   <a
                     class="reservation-link"
                     href="https://reservations.travelclick.com/98391?groupID=3576612/"
-                    >link</a
-                  >
-                  to book with Cheshire! Please book before October 28th<br /><br
+                    >Click this link to book with Cheshire!</a
+                  ><br />
+                  Please book before October 18th.<br /><br
                 /></span>
               </p>
             </div>

@@ -100,7 +100,11 @@ iframe {
   justify-content: center;
 }
 
-.hotel-names,
+.hotel-names {
+  font-weight: bold;
+  text-decoration: underline;
+  color: magenta !important;
+}
 .reservation-link {
   font-weight: bold;
   text-decoration: underline;
