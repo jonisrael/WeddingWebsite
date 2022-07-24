@@ -142,14 +142,21 @@ h1#title {
     padding-left: 30px; */
 }
 
+#supporting-photo {
+  content: "./assets/Images/DSC_4197.jpg";
+}
+
 .default-button {
-  margin: 2rem;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
   outline: black solid 0.1rem;
   border-radius: 1rem;
-  padding: 3rem;
-  background-image: linear-gradient(to bottom right, dodgerblue, turquoise);
+  width: 70vw;
+  padding: 1rem;
+  background-image: linear-gradient(to bottom right, #5f8575, limegreen);
+  color: navy;
   font-size: 2rem;
-  align-items: center;
 }
 
 .default-button:hover {
@@ -309,7 +316,6 @@ i.toggle-tab-icon {
 }
 
 /* Add and remove when doing dev work */
-.nav-links li:nth-child(3),
 .nav-links li:nth-child(4) {
   display: none !important;
 }
