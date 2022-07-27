@@ -24,7 +24,7 @@ section {
 p {
   text-indent: 2rem;
   color: #867267;
-  font-size: 1.5vw;
+  font-size: large;
   line-height: 1.5;
   padding: 0 2vw;
 }
@@ -72,8 +72,9 @@ iframe {
 }
 
 #root {
-  margin: 2.5vh auto;
-  max-width: 80vw;
+  margin: 0 auto;
+  width: 1000px;
+  /* max-width: 80%; */
   padding-top: 1vh;
 }
 
@@ -130,7 +131,7 @@ h1#title {
   /* height: 90%; */
   padding: 0;
   padding-bottom: 1px;
-  margin: 1vh 5vw;
+  margin: 1rem;
   /* max-width: 95vw; */
   /* top: 5%; */
   /* max-height: 95vh; */
@@ -152,7 +153,7 @@ h1#title {
   margin: 10px auto;
   outline: black solid 0.1rem;
   border-radius: 1rem;
-  width: 70vw;
+  width: 400px;
   padding: 1rem;
   background-image: linear-gradient(to bottom right, #5f8575, limegreen);
   color: navy;
@@ -189,11 +190,14 @@ h1#title {
   cursor: pointer;
 }
 
-#home-photo-1 {
-  display: block;
+img {
   margin: 0 auto;
+  display: block;
+}
+
+#home-photo-1 {
   content: url(assets/Images/main.jpg);
-  width: 95%;
+  width: 90%;
 }
 
 #home-photo-2 {
@@ -320,14 +324,12 @@ i.toggle-tab-icon {
   display: none !important;
 }
 
-/* @media only screen and (min-width: 768px) {
-  .columns p {
-    font-size: 2.5vh;
-  }
-} */
+img {
+  margin: 0 auto;
+}
 
 /* Now define features of mobile screen. Should be 768px */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   #page-body {
     margin: 1vh 5vw;
   }
@@ -354,6 +356,7 @@ i.toggle-tab-icon {
 
   .rows {
     padding: 0.5rem;
+    margin: 0 auto;
   }
 
   #root {
@@ -388,5 +391,17 @@ i.toggle-tab-icon {
 
   #nav-bar li a {
     margin: 0 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  p {
+    font-size: 1.12rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  p {
+    font-size: 1.115rem;
   }
 }
