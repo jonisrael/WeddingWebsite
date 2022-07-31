@@ -21,6 +21,20 @@ section {
   border-radius: 1rem;
 }
 
+p,
+h1,
+h2,
+h3,
+span {
+  font-family: "Lucida Handwriting", cursive;
+}
+
+#travel-tabs p > span,
+#travel-tabs p,
+#travel-tabs h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 p {
   text-indent: 2rem;
   color: #867267;
@@ -320,7 +334,8 @@ i.toggle-tab-icon {
 }
 
 /* Add and remove when doing dev work */
-.nav-links li:nth-child(4) {
+.nav-links li:nth-child(4),
+.nav-links li:nth-child(3) {
   display: none !important;
 }
 
