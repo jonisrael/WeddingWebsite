@@ -277,9 +277,13 @@ function doYesSelected([guest1, guest2, numberOfGuests, guestIndex]) {
     data.index = guestIndex;
     data.guestList = [];
     data.attendance = "Yes";
-    for (let i = 1; i <= numberOfGuests; i++) {
-      data.guestList.push(document.querySelector(`#guest-${i}`).value);
+    if (numberOfGuests === 1) data.guestList = [guest1];
+    else {
+      for (let i = 1; i <= numberOfGuests; i++) {
+        data.guestList.push(document.querySelector(`#guest-${i}`).value);
+      }
     }
+
     data.dietaryRestrictions = dietaryInputField.value;
     console.log(data);
     document.querySelector("#final-section").innerHTML = "";
