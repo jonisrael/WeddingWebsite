@@ -19,13 +19,15 @@ header {
 
 section {
   border-radius: 1rem;
+  min-height: 500px;
 }
 
 p,
 h1,
 h2,
 h3,
-span {
+span,
+#nav-bar li {
   font-family: "Lucida Handwriting", cursive;
 }
 
@@ -90,6 +92,11 @@ iframe {
   width: 1000px;
   /* max-width: 80%; */
   padding-top: 1vh;
+}
+
+.guest-name-fields {
+  padding: 5px;
+  margin: 5px;
 }
 
 .app-message-display {
@@ -198,6 +205,17 @@ h1#title {
   font-size: large;
   padding: 1em;
   margin: 0.5em;
+}
+
+#error-message {
+  font-family: initial;
+  color: red;
+  font-size: x-small;
+  text-indent: 3px;
+}
+
+#rsvp {
+  min-height: 500px;
 }
 
 .tab-title {
@@ -322,6 +340,10 @@ i.toggle-tab-icon {
 
 .tab-content.active {
   display: block !important;
+}
+
+#guest-output {
+  color: blue;
 }
 
 .tab-title.active span {

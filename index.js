@@ -5,6 +5,10 @@ import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 import dotenv from "dotenv";
+import {
+  askForConfirmation,
+  checkInvitedGuestList,
+} from "./guestListFunctions";
 
 dotenv.config();
 
@@ -78,6 +82,15 @@ function addEventListeners(st) {
       });
     }
   }
+  if (st.view === "RSVP") {
+    let confirmButton = document.querySelector("#confirm-name-entry");
+    let guestName = document.querySelector("#guest-name");
+    confirmButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      let guestArray = checkInvitedGuestList(guestName.value);
+      askForConfirmation(guestArray);
+    });
+  }
 }
 
 export function deleteEntry(_id) {
@@ -91,23 +104,23 @@ export function deleteEntry(_id) {
     });
 }
 
-export function updateRSVP(arrOfNames, name) {
-  console.log("entry:", state.RSVP.data[indexToReplace]);
-  console.log("index:", indexToReplace);
-  axios
-    .put(`${process.env.API}/entries/${state.RSVP.data._id}`, newData) // process.env.API accesses API
-    .then((response) => {
-      console.log(`Update Successful. Setting username to ${newData.name}`);
-      localStorage.setItem("username", newData.name);
-    })
-    .catch((error) => {
-      leaderboard.reason = "no-leaderboard";
-      displayMessage(
-        `Failed to Update Leaderboard at Rank ${indexToReplace + 1}. ${error}`
-      );
-      console.log("Update Failed, index ${indexToReplace)", error);
-    });
-}
+// export function updateRSVP(arrOfNames, name) {
+//   console.log("entry:", state.RSVP.data[indexToReplace]);
+//   console.log("index:", indexToReplace);
+//   axios
+//     .put(`${process.env.API}/entries/${state.RSVP.data._id}`, newData) // process.env.API accesses API
+//     .then((response) => {
+//       console.log(`Update Successful. Setting username to ${newData.name}`);
+//       localStorage.setItem("username", newData.name);
+//     })
+//     .catch((error) => {
+//       leaderboard.reason = "no-leaderboard";
+//       displayMessage(
+//         `Failed to Update Leaderboard at Rank ${indexToReplace + 1}. ${error}`
+//       );
+//       console.log("Update Failed, index ${indexToReplace)", error);
+//     });
+// }
 
 export function getData() {
   axios
