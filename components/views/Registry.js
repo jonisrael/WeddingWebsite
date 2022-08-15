@@ -5,7 +5,7 @@ export default (st) => html`
     <div id="registry-text">
       <br />
       <p style="text-align: center; font-weight: bold; font-size: x-large;">
-        Our registry can be found at knot.com. <br /><br />
+        Our registry can be found at The Knot. <br /><br />
         <a
           id="registry-link"
           href="https://registry.theknot.com/susanna-bowers-jonathan-israel-november-2022-mo/52790054"

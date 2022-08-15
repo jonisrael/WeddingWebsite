@@ -143,11 +143,12 @@ iframe {
   padding: 16px;
   border: 2px solid grey;
   border-radius: 16px;
-  background-color: lightgoldenrodyellow;
+  background-color: navy;
+  color: white;
 }
 
 #registry-link:hover {
-  background-color: yellow;
+  background-color: blue;
 }
 
 .hotel-names {
