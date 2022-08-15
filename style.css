@@ -94,6 +94,23 @@ iframe {
   padding-top: 1vh;
 }
 
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+#guest-label {
+  font-size: large;
+  font-weight: bold;
+}
+
 .guest-name-fields {
   padding: 5px;
   margin: 5px;
@@ -105,10 +122,10 @@ iframe {
   border-radius: 3px;
 }
 
-#story-columns,
-#more-home-columns {
+.story-rows,
+.rows {
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem 0;
 }
 
 #story-paragraph {
@@ -122,6 +139,17 @@ iframe {
   justify-content: center;
 }
 
+#registry-link {
+  padding: 16px;
+  border: 2px solid grey;
+  border-radius: 16px;
+  background-color: lightgoldenrodyellow;
+}
+
+#registry-link:hover {
+  background-color: yellow;
+}
+
 .hotel-names {
   font-weight: bold;
   text-decoration: underline;
@@ -131,6 +159,10 @@ iframe {
   font-weight: bold;
   text-decoration: underline;
   color: #007bff !important;
+}
+
+form {
+  text-align: center;
 }
 
 .lodging-locations a {
@@ -214,8 +246,20 @@ h1#title {
   text-indent: 3px;
 }
 
+.vertical-image {
+  width: 40%;
+}
+
+.horizontal-image {
+  width: 95%;
+}
+
 #rsvp {
   min-height: 500px;
+}
+
+#registry {
+  min-height: 800px;
 }
 
 .tab-title {
@@ -223,22 +267,87 @@ h1#title {
 }
 
 img {
+  border-radius: 2%;
   margin: 0 auto;
   display: block;
+  width: 70%;
 }
 
 #home-photo-1 {
   content: url(assets/Images/main.jpg);
-  width: 90%;
+  width: 95%;
 }
 
 #home-photo-2 {
-  content: url("./assets/Images/DSC_4491.jpg");
+  content: url("./assets/Images/DSC_4544.jpg");
   width: 95%;
 }
 #home-photo-3 {
-  content: url("./assets/Images/DSC_4545.jpg");
+  content: url("./assets/Images/DSC_4256.jpg");
   width: 95%;
+}
+
+#home-photo-4 {
+  content: url("./assets/Images/DSC_4385.jpg");
+  width: 95%;
+}
+
+#home-photo-5 {
+  content: url("./assets/Images/DSC_4338.jpg");
+  width: 93%;
+}
+
+.rsvp-photos {
+  margin: 10px auto;
+  border-radius: 10%;
+}
+
+#rsvp-photo-1 {
+  content: url("./assets/Images/DSC_4326_widescreen.jpg");
+  margin-top: 50px;
+}
+
+#rsvp-photo-2 {
+  content: url("assets/Images/ring.jpg");
+  width: 30%;
+  margin-top: 20px;
+}
+
+.reg-photos {
+  margin: 0 auto;
+  border-radius: 10%;
+  width: 80%;
+}
+
+.reg-photo-1 {
+  content: url("./assets/Images/DSC_4175.jpg");
+}
+.reg-photo-2 {
+  content: url("./assets/Images/DSC_4357.jpg");
+}
+.reg-photo-3 {
+  content: url("./assets/Images/DSC_4382.jpg");
+}
+.reg-photo-4 {
+  content: url("./assets/Images/DSC_4482.jpg");
+}
+
+.detail-photos {
+  margin: 20px auto;
+  border-radius: 10%;
+  width: 90%;
+}
+
+.detail-photo-1 {
+  content: url("./assets/Images/DSC_4491.jpg");
+}
+
+.detail-photo-2 {
+  content: url("./assets/Images/DSC_4413.jpg");
+}
+
+.detail-photo-3 {
+  content: url("./assets/Images/DSC_4567.jpg");
 }
 
 #header #home-page {
@@ -329,13 +438,13 @@ img {
 }
 
 i.toggle-tab-icon {
-  content: url("./assets/Images/arrowOrange.png");
+  content: url("./assets/Images/arrowWhite.png");
   float: right;
   transform: scale(0.75);
 }
 
 .open {
-  transform: scale(0.75, -0.75) translateY(20px);
+  transform: scale(0.75, -0.75) translateY(20px) !important;
 }
 
 .tab-content.active {
@@ -361,12 +470,24 @@ i.toggle-tab-icon {
   display: none !important;
 }
 
-img {
-  margin: 0 auto;
+.mobile-photos {
+  display: none;
 }
 
 /* Now define features of mobile screen. Should be 768px */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 999px) {
+  .desktop-photos {
+    display: none;
+  }
+
+  .mobile-photos {
+    display: block;
+  }
+
+  .detail-photos {
+    width: 90%;
+  }
+
   #page-body {
     margin: 1vh 5vw;
   }
@@ -377,12 +498,17 @@ img {
     display: block;
   }
 
+  .reg-photos {
+    margin: 10px auto;
+    border-radius: 10%;
+  }
+
   div#lodging-content {
     padding: 0;
   }
 
   i.toggle-tab-icon {
-    content: url("./assets/Images/arrowOrange.png");
+    content: url("./assets/Images/arrowWhite.png");
     float: right;
     transform: scale(0.5) translateY(-0.4rem);
   }
@@ -391,9 +517,8 @@ img {
     margin: 0.5rem;
   }
 
-  .rows {
-    padding: 0.5rem;
-    margin: 0 auto;
+  img {
+    width: 80%;
   }
 
   #root {
@@ -429,16 +554,45 @@ img {
   #nav-bar li a {
     margin: 0 0.5rem;
   }
-}
 
-@media only screen and (min-width: 1500px) {
-  p {
-    font-size: 1.12rem;
+  #rsvp-image {
+    width: 90%;
   }
 }
 
-@media only screen and (min-width: 1600px) {
-  p {
-    font-size: 1.115rem;
+@media only screen and (max-width: 390px) {
+  #registry-link {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #registry-link {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  #registry-link {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .story > p {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: 1300px) {
+    .story > p {
+      font-size: 15.9px;
+    }
+  }
+  @media only screen and (min-width: 1385px) {
+    .story > p {
+      font-size: 15.8px;
+    }
+  }
+  @media only screen and (min-width: 2200px) {
+    .story > p {
+      font-size: 15.3px;
+    }
   }
 }

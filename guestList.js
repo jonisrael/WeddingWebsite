@@ -19,7 +19,7 @@ export const guestList = [
   },
   {
     name1: "Adam Potts",
-    name2: "Adam Potts",
+    name2: "Katie Potts",
     totalGuests: 2,
     index: 3,
   },

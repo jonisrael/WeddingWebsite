@@ -145,6 +145,13 @@ export default (st) => html`
           </li>
         </ul>
       </div>
+      <div class="photos">
+        <br />
+        <div class="columns"><img class="detail-photos detail-photo-1" /></div>
+        <div class="columns"><img class="detail-photos detail-photo-2" /></div>
+        <div class="columns"><img class="detail-photos detail-photo-3" /></div>
+      </div>
+    </div>
     </body>
   </section>
 `;

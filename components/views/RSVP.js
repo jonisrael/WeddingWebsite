@@ -22,6 +22,7 @@ export default (st) => html`
         />
         <button id="confirm-name-entry">Confirm Name</button>
       </div>
+      <img class="rsvp-photos" id="rsvp-photo-1" />
     </form>
   </section>
 `;

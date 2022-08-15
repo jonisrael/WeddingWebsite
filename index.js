@@ -5,10 +5,9 @@ import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 import dotenv from "dotenv";
-import {
-  askForConfirmation,
-  checkInvitedGuestList,
-} from "./guestListFunctions";
+import { guestList } from "./guestList";
+import { checkInvitedGuestList } from "./rsvpForm/functions/checkInvitedGuestList.js";
+import { askForConfirmation } from "./rsvpForm/main";
 
 dotenv.config();
 
@@ -87,8 +86,8 @@ function addEventListeners(st) {
     let guestName = document.querySelector("#guest-name");
     confirmButton.addEventListener("click", (event) => {
       event.preventDefault();
-      let guestArray = checkInvitedGuestList(guestName.value);
-      askForConfirmation(guestArray);
+      let sortedGuestArray = checkInvitedGuestList(guestList, guestName.value);
+      askForConfirmation(sortedGuestArray);
     });
   }
 }
