@@ -107,7 +107,7 @@ export function deleteEntry(_id) {
 //   console.log("entry:", state.RSVP.data[indexToReplace]);
 //   console.log("index:", indexToReplace);
 //   axios
-//     .put(`${process.env.API}/entries/${state.RSVP.data._id}`, newData) // process.env.API accesses API
+//     .put(`${process.env.API}/invites/${state.RSVP.data._id}`, newData) // process.env.API accesses API
 //     .then((response) => {
 //       console.log(`Update Successful. Setting username to ${newData.name}`);
 //       localStorage.setItem("username", newData.name);
@@ -123,7 +123,7 @@ export function deleteEntry(_id) {
 
 export function getData() {
   axios
-    .get("https://jon-and-susanna-wedding.herokuapp.com/entries")
+    .get("https://puzzle-league-blitz.herokuapp.com/invites")
     .then((response) => {
       console.log("Got Data!", response);
     })

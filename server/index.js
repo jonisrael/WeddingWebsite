@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
-const nameEntries = require("./routers/entries.js");
+const nameInvites = require("./routers/invites.js");
 
 dotenv.config();
 
@@ -49,7 +49,7 @@ const cors = (req, res, next) => {
 app.use(cors);
 app.use(express.json());
 app.use(logging);
-app.use(nameEntries);
+app.use(nameInvites);
 
 app
   .route("/")
