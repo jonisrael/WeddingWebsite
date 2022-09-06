@@ -39,13 +39,6 @@ export function render(st) {
 
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
-  document.querySelector("footer > strong").addEventListener("click", () => {
-    document.querySelectorAll(".nav-links > li").forEach((link) => {
-      link.className = "dev-enabled nav-links";
-      link.style.cssText = "display: inline !important;";
-      console.log("done");
-    });
-  });
   document
     .querySelector("#nav-bar")
     .addEventListener("click", () =>
@@ -90,6 +83,14 @@ function addEventListeners(st) {
       askForConfirmation(sortedGuestArray);
     });
   }
+
+  // document.querySelector("footer > strong").addEventListener("click", () => {
+  //   document.querySelectorAll(".nav-links > li").forEach((link) => {
+  //     link.className = "dev-enabled nav-links";
+  //     link.style.cssText = "display: inline !important;";
+  //     console.log("done");
+  //   });
+  // });
 }
 
 export function deleteEntry(_id) {

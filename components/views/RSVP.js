@@ -4,7 +4,7 @@ export default (st) => html`
   <section id="rsvp">
     <h2>
       If you're responding to an invite, please enter your name below to confirm
-      your invitation.
+      your invitation. Please RSVP by October 15th!
     </h2>
     <form>
       <div id="guest-lookup">
