@@ -15,7 +15,7 @@ export const router = new Navigo(window.location.origin);
 
 export function render(st) {
   // if (st === undefined) st = state.Home;
-  console.log(state, st);
+  // console.log(state, st);
   document.querySelector("#root").innerHTML = `
   ${Header(st)}
   ${Nav(state.Links)}
@@ -30,7 +30,7 @@ export function render(st) {
     if (st.view === link.innerHTML) {
       link.style.borderBottom = "2px solid black";
     }
-    console.log(link.innerHTML, st.view === link.innerHTML);
+    // console.log(link.innerHTML, st.view === link.innerHTML);
   }
   // localStorage.removeItem("patchNotesShown");
   // console.log("patch notes shown:", localStorage.getItem("patchNotesShown"));
@@ -51,7 +51,7 @@ function addEventListeners(st) {
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
-  if (st.view === "Travel") {
+  if (st.view === "Details") {
     let travelTabList = document.querySelectorAll("#travel-tabs > li");
     for (let i = 0; i < travelTabList.length; i++) {
       let element = travelTabList[i];
@@ -64,7 +64,7 @@ function addEventListeners(st) {
       let icon = document.querySelector(
         `#travel-tabs > li:nth-child(${i + 1}) > .tab-title > .toggle-tab-icon`
       );
-      console.log(element);
+      // console.log(element);
       title.addEventListener("click", () => {
         if (content.className.includes("active")) {
           content.className = "tab-content";
@@ -94,7 +94,7 @@ function addEventListeners(st) {
 
 export function deleteEntry(_id) {
   axios
-    .delete(`${process.env.API}/games/${_id}`) // process.env.API accesses API
+    .delete(`${process.env.API}/invites/${_id}`) // process.env.API accesses API
     .then((response) => {
       console.log(`Deletion Successful.`);
     })
@@ -138,7 +138,7 @@ export function getData() {
 export function sendData(requestData) {
   console.log("Posting data...");
   axios
-    .post(`${process.env.API}/games`, requestData) // process.env.API accesses API
+    .post(`${process.env.API}/invites`, requestData) // process.env.API accesses API
     .then((response) => {
       console.log("Posted!");
     })

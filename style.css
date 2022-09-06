@@ -306,6 +306,7 @@ img {
 #rsvp-photo-1 {
   content: url("./assets/Images/DSC_4277.jpg");
   margin-top: 50px;
+  width: 50%;
 }
 
 #rsvp-photo-2 {
@@ -466,9 +467,9 @@ i.toggle-tab-icon {
 }
 
 /* Add and remove when doing dev work */
-.nav-links li:nth-child(4) {
+/* .nav-links li:nth-child(4) {
   display: none !important;
-}
+} */
 
 .mobile-photos {
   display: none;

@@ -9,7 +9,9 @@ export function checkInvitedGuestList(guestList, nameEntry) {
     let guest = guestList[i];
     if (
       guest.name1.toLowerCase().includes(nameEntry.toLowerCase()) &&
-      nameEntry.length > 0.66 * guest.name1.length
+      nameEntry.length > 0.7 * guest.name1.length &&
+      nameEntry.includes(" ") &&
+      nameEntry[nameEntry.length - 1] !== " "
     ) {
       return [guest.name1, guest.name2, guest.totalGuests, guest.index];
     }

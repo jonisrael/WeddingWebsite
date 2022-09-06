@@ -3,32 +3,11 @@ import { doNoSelected } from "./doNoSelected";
 import { tryRemovingElement } from "./functions/tryRemovingElement";
 import { writeErrorMessage } from "./functions/writeErrorMessage";
 import { newChildElement } from "./functions/newChildElement.js";
-import { rsvpForm } from "../rsvpFormLinks";
 
 export function askForConfirmation(guestArray) {
   if (guestArray === undefined) return;
 
-  let [firstGuest, secondGuest, totalGuests, guestIndex] = guestArray;
-  // console.log(guestArray, rsvpForm);
-  // console.log(rsvpForm[totalGuests]);
-  let form = document.querySelector("form");
-
-  // tryRemovingElement("#attendance");
-  // tryRemovingElement("#error");
-  tryRemovingElement("#guest-lookup");
-  tryRemovingElement("img");
-
-  let confirmationDiv = newChildElement("attendance", form, "div");
-  confirmationDiv.innerHTML = `<h2>Welcome, <span id="guest-output">${firstGuest}</span>! Please fill out the form below to respond to your invitation.</h2>`;
-
-  let googleFormDiv = newChildElement("google-embed", form, "div");
-  googleFormDiv.outerHTML = rsvpForm[totalGuests].embed;
-}
-
-export function askForConfirmationOld(guestArray) {
-  if (guestArray === undefined) return;
-
-  let [firstGuest, secondGuest, totalGuests, guestIndex] = guestArray;
+  let [firstGuest, secondGuest, extraGuests, guestIndex] = guestArray;
   let form = document.querySelector("form");
 
   // tryRemovingElement("#attendance");
@@ -94,7 +73,7 @@ export function askForConfirmationOld(guestArray) {
       tryRemovingElement("#attendance-input");
       form.appendChild(finalSection);
     } else {
-      // console.log("Neither Response Selected");
+      console.log("Neither Response Selected");
       writeErrorMessage("#attendance", "Please select yes or no.");
     }
     if (yesSelected) {
