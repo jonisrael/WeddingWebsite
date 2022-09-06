@@ -44,7 +44,7 @@ export const guestList = [
   {
     name1: "Andrew Israel",
     name2: "Andrew Israel",
-    totalGuests: 1,
+    totalGuests: 2,
     index: 7,
   },
   {
