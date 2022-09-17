@@ -212,7 +212,7 @@ export const guestList = [
   {
     name1: "Erin Kiely",
     name2: "Erin Kiely",
-    totalGuests: 1,
+    totalGuests: 2,
     index: 35,
   },
   {
@@ -512,7 +512,7 @@ export const guestList = [
   {
     name1: "Raneda Smith",
     name2: "Raneda Smith",
-    totalGuests: 4,
+    totalGuests: 1,
     index: 85,
   },
   {
