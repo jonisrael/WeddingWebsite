@@ -683,4 +683,31 @@ export const guestList = [
     totalGuests: 2,
     index: 113,
   },
+  {
+    name1: "Catharine Magel",
+    name2: "David  Kniepkamp",
+    totalGuests: 2,
+    index: 114,
+  },
+
+  {
+    name1: "Yvonne Schwandt",
+    name2: "Yvonne Schwandt",
+    totalGuests: 2,
+    index: 115,
+  },
+
+  {
+    name1: "Sean Small",
+    name2: "Sean Small",
+    totalGuests: 2,
+    index: 116,
+  },
+
+  {
+    name1: "Cooper Schneider",
+    name2: "Cooper Schneider",
+    totalGuests: 1,
+    index: 114,
+  },
 ];

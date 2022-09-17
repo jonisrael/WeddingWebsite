@@ -4,6 +4,6 @@ export default () => html`
   <footer id="footer">
     Website Created by Jonathan Israel. <br />
     <!-- <strong>RSVP Page Coming Soon!</strong><br /> -->
-    Last updated September 6, 2022
+    Last updated September 16, 2022
   </footer>
 `;
