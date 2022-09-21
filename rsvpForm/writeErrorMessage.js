@@ -9,5 +9,6 @@ export function writeErrorMessage(parentSelector, message) {
   let errorMessage = document.createElement("span");
   errorMessage.id = "error-message";
   errorMessage.textContent = message;
+  errorMessage.style.display = "block";
   errorDiv.appendChild(errorMessage);
 }

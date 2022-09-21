@@ -1,6 +1,6 @@
 import { tryRemovingElement } from "./tryRemovingElement";
 
-export function writeErrorMessage(parentSelector, message) {
+export function writeErrorMessage(parentSelector, message, color = "red") {
   let parentElement = document.querySelector(parentSelector);
   tryRemovingElement("#error");
   let errorDiv = document.createElement("div");
@@ -9,5 +9,6 @@ export function writeErrorMessage(parentSelector, message) {
   let errorMessage = document.createElement("span");
   errorMessage.id = "error-message";
   errorMessage.textContent = message;
+  errorMessage.style.color = color;
   errorDiv.appendChild(errorMessage);
 }

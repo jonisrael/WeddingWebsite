@@ -4,14 +4,17 @@ const forms = {
   single: {
     hyperlink: `https://forms.gle/A4iaRtQndBPVX6QQ9`,
     embed: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdw1qiXrwApCubvhooQOU-VHySA1t1_4EZVW2IDBUumaZOVXw/viewform?embedded=true" width="100%" height="80%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`,
+    msg: "single form loaded",
   },
   multiple: {
     hyperlink: `https://forms.gle/oz6XZveSivW9zfD18`,
     embed: `<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfe9YimYoautSE2pe0Q0xMaiD44Mt9Q-7R3IOz3Sd5CHAsIlQ/viewform?embedded=true" width="100%" height="80%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`,
+    msg: "multiple form loaded",
   },
 };
 
 export const rsvpForm = [
+  undefined,
   forms.single,
   forms.multiple,
   forms.multiple,

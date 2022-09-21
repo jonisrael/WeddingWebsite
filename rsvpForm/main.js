@@ -23,6 +23,7 @@ export function askForConfirmation(guestArray) {
 
   let googleFormDiv = newChildElement("google-embed", form, "div");
   googleFormDiv.outerHTML = rsvpForm[totalGuests].embed;
+  console.log(rsvpForm[totalGuests].msg, totalGuests);
 }
 
 export function askForConfirmationOld(guestArray) {
