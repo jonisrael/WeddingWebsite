@@ -5,6 +5,13 @@ export function checkInvitedGuestList(guestList, nameEntry) {
     writeErrorMessage("#guest-lookup", "Please enter a name.");
     return;
   }
+  nameEntry.replace("Mr. ", "");
+  nameEntry.replace("Mrs. ", "");
+  nameEntry.replace("Ms. ", "");
+  nameEntry.replace("Miss ", "");
+  nameEntry.replace("Dr. ", "");
+  nameEntry.replace(" and ", "");
+  nameEntry.replace(" & ", "");
   for (let i = 0; i < guestList.length; i++) {
     let guest = guestList[i];
     if (
