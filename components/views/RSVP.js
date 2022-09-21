@@ -3,9 +3,9 @@ import html from "html-literal";
 export default (st) => html`
   <section id="rsvp">
     <h2>
-      If you're responding to an invite, please enter your FULL formal name
-      below (it should match the invitation) to access the RSVP form. Only enter
-      one name from the invitation. Please RSVP by October 22nd!
+      Please enter your FULL formal name below (it should match the invitation)
+      to access the RSVP form. Only enter one name from the invitation. Please
+      RSVP by October 22nd!
     </h2>
     <form>
       <div id="guest-lookup">
