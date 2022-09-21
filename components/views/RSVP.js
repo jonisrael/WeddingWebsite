@@ -3,13 +3,14 @@ import html from "html-literal";
 export default (st) => html`
   <section id="rsvp">
     <h2>
-      If you're responding to an invite, please enter your name below to confirm
-      your invitation. Please RSVP by October 15th!
+      If you're responding to an invite, please enter your FULL name below (it
+      should match the invitation in most cases) to confirm your invitation.
+      Please RSVP by October 15th!
     </h2>
     <form>
       <div id="guest-lookup">
         <label for="guest-name" id="guest-label">
-          Look up your name here:
+          Look up your FULL name here:
         </label>
         <br />
         <input
