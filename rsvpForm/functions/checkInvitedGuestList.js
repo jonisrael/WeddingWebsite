@@ -52,7 +52,7 @@ export function checkInvitedGuestList(guestList, nameEntry) {
   } else if (failCount === 3) {
     writeErrorMessage(
       "#guest-lookup",
-      "Try one more time -- did you make sure to enter only one name?"
+      "Try one more time -- did you make sure to enter only one first and last name?"
     );
   } else {
     writeErrorMessage(
