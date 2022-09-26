@@ -717,4 +717,39 @@ export const guestList = [
     totalGuests: 2,
     index: 115,
   },
+
+  {
+    name1: "Andrei Krozel",
+    name2: "Andrei Krozel",
+    totalGuests: 1,
+    index: 116,
+  },
+
+  {
+    name1: "Brandon Green",
+    name2: "Brandon Green",
+    totalGuests: 1,
+    index: 117,
+  },
+
+  {
+    name1: "Sam Zychinski",
+    name2: "Sam Zychinski",
+    totalGuests: 1,
+    index: 118,
+  },
+
+  {
+    name1: "JR Ditter",
+    name2: "JR Ditter",
+    totalGuests: 1,
+    index: 119,
+  },
+
+  {
+    name1: "Chris Vollrath",
+    name2: "Chris Vollrath",
+    totalGuests: 1,
+    index: 120,
+  },
 ];
