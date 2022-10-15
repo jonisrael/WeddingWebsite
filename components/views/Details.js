@@ -59,7 +59,7 @@ export default (st) => html`
             <div id="ceremony-content" class="tab-content">
               <p>
                 The ceremony will be at the Piper Palm House in Tower Grove
-                Park. <br />
+                Park. It will start at 2:30pm.<br />
                 The address is:
                 <a href="https://goo.gl/maps/s2VerwemNhJEV9hC8"
                   ><strong>4271 Northeast Dr, St. Louis, MO 63110</strong></a
@@ -117,14 +117,15 @@ export default (st) => html`
             </div>
             <div id="reception-content" class="tab-content">
               <p>
+
+                The reception will be at The Christy of Saint Louis, about ten
+                minutes away from the ceremony location. It will start at 4pm.<br /><br />
                 The address is:
                 <a href="https://goo.gl/maps/NTmjZWagaJ65y5hE8" color="white">
-                  <strong>5856 Christy Blvd, St. Louis, MO 63116</strong>
+                  <strong>5856 Christy Blvd, St. Louis, MO 63116</strong>.
                 </a>
                 <br />
                 <br />
-                The reception will be at The Christy of Saint Louis, about ten
-                minutes away from the ceremony location. <br /><br />
                 <strong>Parking:</strong><br />
                 There is a parking lot directly next to The Christy and street
                 parking will also be available.
