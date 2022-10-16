@@ -758,4 +758,10 @@ export const guestList = [
     totalGuests: 2,
     index: 121,
   },
+  {
+    name1: "Jill Foster",
+    name2: "Jay Foster",
+    totalGuests: 2,
+    index: 122,
+  },
 ];
