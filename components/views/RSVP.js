@@ -5,7 +5,7 @@ export default (st) => html`
     <h2>
       Please enter your FULL formal name below (it should match the invitation)
       to access the RSVP form. Only enter one name from the invitation. Please
-      RSVP by October 22nd!
+      RSVP by October 15th!
     </h2>
     <form>
       <div id="guest-lookup">

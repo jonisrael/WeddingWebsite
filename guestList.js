@@ -324,8 +324,8 @@ export const guestList = [
     index: 53,
   },
   {
-    name1: "Justin Krackmalnick",
-    name2: "Justin Krackmalnick",
+    name1: "Justin Krachmalnick",
+    name2: "Justin Krachmalnick",
     totalGuests: 2,
     index: 54,
   },
